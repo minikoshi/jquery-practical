@@ -1,0 +1,159 @@
+body {
+  font-family: "Noto Sans JP";
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+}
+#pageLink {
+  display: flex;
+  justify-content: space-around;
+}
+#pageLink a {
+  text-decoration: none;
+  font-size: 34px;
+  color: #000000;
+}
+#menu {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+#right {
+  position: relative;
+  left: 10px;
+}
+#pageLink h1 {
+  border: solid;
+  border-width: thin;
+  font-size: 34px;
+  padding: 0 10px;
+  position: relative;
+  right: 20px;
+}
+img {
+  width: 100%;
+}
+.section {
+  width: 70%;
+  margin: 0 auto;
+}
+.section h2 {
+  text-align: center;
+}
+#selfPhoto {
+  border-radius: 50%;
+}
+.article {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  margin: 30px 0;
+}
+.article h3 {
+  font-size: 24px;
+}
+#aboutMe {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+.works {
+  width: 100%;
+  margin: 0 10px;
+}
+.works > img {
+  width: 100%;
+  cursor: pointer;
+}
+.works > p {
+  margin-top: 0;
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+}
+#page-top {
+  position: fixed;
+  bottom: 38px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 28px 24px;
+  border-radius: 50%;
+}
+.fade-in-target {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fade-in {
+  opacity: 1;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.modal-window {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  #pageLink {
+    justify-content: space-evenly;
+    margin: 0 20px;
+  }
+  #pageLink  h1 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  #menu a {
+    font-size: 24px;
+  }
+  .article {
+    flex-direction: column;
+  }
+  #about > h2 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  #aboutMe {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  #aboutMe > ul {
+    margin-top: 10px;
+    width: 100%;
+  }
+  #aboutMe > h3 {
+    margin: 0;
+  }
+  #works {
+    width: 90%;
+  }
+  .works {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
